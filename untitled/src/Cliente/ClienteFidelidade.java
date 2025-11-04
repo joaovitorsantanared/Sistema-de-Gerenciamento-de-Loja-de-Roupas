@@ -11,11 +11,11 @@ public class ClienteFidelidade extends Cliente {
         double valorDesconto = ValorCompra * 0.3;
         double valorfinal = ValorCompra - valorDesconto;
 
-        System.out.println("O cliente " + getNome() + " obteve um desconto de 30% com sucesso!");
+        System.out.println("O cliente " + getNome() + " obteve um desconto de 30% com sucesso!\n");
         System.out.println("VALOR FINAL DA COMPRA: " + valorfinal);
     }
     public void recomendarProdutos(){
-        System.out.println("Com base nos seus gostos, recomendamos a você: Calca cargo Streetwear");
+        System.out.println("Com base nos seus gostos, recomendamos a você: Calca cargo Streetwear\n");
     }
 
     public void avaliacao(int nota){
@@ -24,7 +24,7 @@ public class ClienteFidelidade extends Cliente {
             System.out.println("Agradecemos pela sua avaliação!");
 
         }else{
-            System.out.println("Poxa, tentaremos melhorar na próxima");
+            System.out.println("Poxa, tentaremos melhorar na próxima\n");
 
         }
     }

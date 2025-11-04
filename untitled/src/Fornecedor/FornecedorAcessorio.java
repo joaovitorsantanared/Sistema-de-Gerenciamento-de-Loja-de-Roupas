@@ -36,6 +36,6 @@ public class FornecedorAcessorio extends Fornecedor {
      @Override
     public void cadastrar() {
         super.cadastrar();
-        System.out.println("Fornecedor de acessórios cadastrado. Verifique materiais recicláveis!");
+        System.out.println("Fornecedor de acessórios cadastrado. Verifique materiais recicláveis!\n");
     }
 }

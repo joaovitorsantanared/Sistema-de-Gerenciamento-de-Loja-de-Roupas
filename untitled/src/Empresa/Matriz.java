@@ -9,7 +9,7 @@ public class Matriz extends UnidadeEmpresa {
     }
 
     public void exibirRelatorioCompleto() {
-        System.out.println("=== Relatório da Matriz ===");
+        System.out.println("\n=== Relatório da Matriz ===");
         System.out.println("Gerente: " + getGerenteResponsavel().getNome());
         System.out.println("Número de funcionários: " + getFuncionariosUnidade().size());
         double totalVendas = getVendasUnidade().stream().mapToDouble(v -> v.getValorTotal()).sum();

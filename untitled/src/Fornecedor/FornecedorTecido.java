@@ -36,6 +36,6 @@ public class FornecedorTecido extends Fornecedor {
     @Override
     public void cadastrar() {
         super.cadastrar();
-        System.out.println("Fornecedor de tecidos cadastrado. Verifique tecidos sustentáveis!");
+        System.out.println("Fornecedor de tecidos cadastrado. Verifique tecidos sustentáveis!\n");
     }
 }

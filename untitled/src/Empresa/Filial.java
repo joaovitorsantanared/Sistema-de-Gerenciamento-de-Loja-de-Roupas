@@ -14,7 +14,7 @@ public class Filial extends UnidadeEmpresa {
     public int getNumeroFilial() { return numeroFilial; }
 
     public void exibirRelatorioCompleto() {
-        System.out.println("=== Relatório da Filial " + numeroFilial + " ===");
+        System.out.println("\n=== Relatório da Filial " + numeroFilial + " ===");
         System.out.println("Gerente: " + getGerenteResponsavel().getNome());
         System.out.println("Número de funcionários: " + getFuncionariosUnidade().size());
         double totalVendas = getVendasUnidade().stream().mapToDouble(Vendas::getValorTotal).sum();

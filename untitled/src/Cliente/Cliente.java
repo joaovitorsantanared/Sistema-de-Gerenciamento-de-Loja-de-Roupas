@@ -79,11 +79,11 @@ public class Cliente {
         }
 
     public void cadastrar(){
-        System.out.println(" Olá" +getNome()+ "!" );
+        System.out.println(" Olá " +getNome()+ "!" );
         System.out.println("O seu cpf é: " +getCpf());
         System.out.println("O seu email é: "+ getEmail());
         System.out.println("O seu número de telefone é " + getNumero());
-        System.out.println("Parabéns! Você está totalmente cadastrado e o seu id a partir de agora é: "+getId());
+        System.out.println("Parabéns! Você está totalmente cadastrado e o seu id a partir de agora é: "+getId()+"\n");
     }
 
 }

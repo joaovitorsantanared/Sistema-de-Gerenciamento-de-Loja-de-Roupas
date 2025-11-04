@@ -46,7 +46,7 @@ public class DepartamentoFinanceiro extends Empresa {
     }
 
     public void exibirRelatorioFinanceiro() {
-        System.out.println("=== Relatório Financeiro da Empresa " + super.getNome() + " ===");
+        System.out.println("\n=== Relatório Financeiro da Empresa " + super.getNome() + " ===");
         System.out.println("Total de Funcionários Financeiros: " + funcionariosFinanceiro.size());
         System.out.println("Total de Caixas: " + caixas.size());
         System.out.println("Saldo total em caixas: R$ " + calcularTotalCaixas());

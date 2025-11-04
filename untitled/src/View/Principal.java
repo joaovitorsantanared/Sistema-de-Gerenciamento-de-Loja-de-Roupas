@@ -131,7 +131,7 @@ public class Principal {
                 "tecidosleves@gmail.com","(81) 99855‑6677","Olinda","Tecidos Sustentáveis");
 
         fn.cadastrar();
-        System.out.println("CNPJ válido? " + fn.validarCNPJ());
+        System.out.println("CNPJ válido? " + fn.validarCNPJ()+"\n");
         fi.cadastrar();
         fa.cadastrar();
         ft.cadastrar();

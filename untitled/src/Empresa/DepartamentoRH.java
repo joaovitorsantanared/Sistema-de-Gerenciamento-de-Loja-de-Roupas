@@ -26,14 +26,14 @@ public class DepartamentoRH extends Empresa {
     }
 
     public void listarFuncionariosRH() {
-        System.out.println("=== Funcionários RH ===");
+        System.out.println("\n=== Funcionários RH ===");
         for (Funcionario f : funcionariosRH) {
             System.out.println(f.getNome() + " - Cargo: " + f.getCargo());
         }
     }
 
     public void relatorioAtivos() {
-        System.out.println("=== Funcionários Ativos RH ===");
+        System.out.println("\n=== Funcionários Ativos RH ===");
         for (Funcionario f : funcionariosRH) {
             if (f.isAtivo()) {
                 System.out.println(f.getNome() + " - Cargo: " + f.getCargo());
