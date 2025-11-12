@@ -41,4 +41,4 @@ O objetivo do projeto é simular o funcionamento real de uma loja de roupas, apl
 
 
 # Linkedin
-Link Post: 
+Link Post: https://www.linkedin.com/posts/joaovitored_java-poo-desenvolvimentodesoftware-activity-7391772570775093248-uLEA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFYrsIABkZkgUMvgEw3EN4DdpbmAT_YDswI
