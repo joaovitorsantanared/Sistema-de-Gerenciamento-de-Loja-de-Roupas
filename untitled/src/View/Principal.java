@@ -6,8 +6,6 @@ import Cliente.Cliente;
 import Cliente.ClienteNovo;
 import Cliente.ClienteFidelidade;
 
-import Funcionarios.Caixa;
-import Funcionarios.Estoquista;
 import Funcionarios.Vendedor;
 import Funcionarios.Gerente;
 
@@ -58,10 +56,6 @@ public class Principal {
                 LocalDate.of(1985,3,7), LocalDate.of(2018,5,30), true, 800.0);
         Vendedor vendedor = new Vendedor(2, "Pedro", "987.654.321‑00",
                 LocalDate.of(1995,9,25), LocalDate.of(2021,1,15), true, 500.0);
-        Caixa caixa = new Caixa(3, "Mariana", "321.654.987‑11",
-                LocalDate.of(1995,2,20), LocalDate.of(2022,3,12), true, 1);
-        Estoquista estoquista = new Estoquista(4, "Rafael", "654.987.321‑22",
-                LocalDate.of(1990,7,5), LocalDate.of(2021,4,10), true, "Roupas");
 
         caixa.registrarPagamento(300.00);
         caixa.realizarSangria(50.00);
