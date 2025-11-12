@@ -1,10 +1,18 @@
 package Cliente;
 
 public class ClienteFidelidade extends Cliente {
+        private int pontosFidelidade;
+        private int nivelFideldiade;
 
 
     public ClienteFidelidade(String id, String nome, String cpf, String email, String numero) {
         super(id, nome, cpf, email, numero);
+    }
+
+    public void acumularPontos(double valorCompra) {
+        int pontosGanhos = (int) (valorCompra / 10);
+        pontosFidelidade += pontosGanhos;
+        System.out.println("Você ganhou " + pontosGanhos + " pontos!");
     }
 
     public void desconto(double ValorCompra) {

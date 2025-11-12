@@ -45,9 +45,11 @@ public class Principal {
         c1.desconto(30.20);
         c1.removerCadastro();
         novo.cadastrar();
+        novo.realizarPrimeiraCompra();
         cliente.cadastrar();
         novo.modificarCadastro("12390814","Marceline","574312839856","marcelinevampira@gmail.com","(18)-995627758");
         c1.avaliacao(4);
+        c1.acumularPontos(Double.parseDouble("41"));
         System.out.println("=== FIM CLIENTES ===\n");
 
         // ===== FUNCIONÁRIOS =====
