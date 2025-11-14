@@ -52,6 +52,6 @@ public class FornecedorInternacional extends Fornecedor {
     @Override
     public void cadastrar() {
         super.cadastrar();
-        System.out.println("Fornecedor internacional cadastrado. Taxa de importação estimada: " + calcularTaxaImportacao(1000.0));
+        System.out.println("Fornecedor internacional cadastrado. Taxa de importação estimada: " + calcularTaxaImportacao(1000.0)+"\n");
     }
 }
