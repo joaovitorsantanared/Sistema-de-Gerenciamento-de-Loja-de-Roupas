@@ -1,10 +1,18 @@
 package Fornecedor;
 
 public class FornecedorAcessorio extends Fornecedor {
+    private String material;
 
     public FornecedorAcessorio(String id, String nome, String cnpj, String email, String telefone, String endereco,
-    String tipoProdutoFornecido) {
+    String tipoProdutoFornecido, String material) {
           super(id, nome, cnpj, email, telefone, endereco, tipoProdutoFornecido);
+    }
+    public String getmaterial() {
+        return material;
+    }
+
+    public void setmaterial(String material) {
+        this.material = material;
     }
 
     public boolean verificarMaterialReciclavel(String tipoMaterial) {

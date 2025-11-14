@@ -1,10 +1,18 @@
 package Fornecedor;
 
 public class FornecedorTecido extends Fornecedor {
-
+    private Double gramatura;
     public FornecedorTecido(String id, String nome, String cnpj, String email, String telefone, String endereco,
-    String tipoProdutoFornecido) {
+    String tipoProdutoFornecido, Double gramatura) {
           super(id, nome, cnpj, email, telefone, endereco, tipoProdutoFornecido);
+        this.gramatura = gramatura;
+    }
+    public Double getgramatuta() {
+        return gramatura;
+    }
+
+    public void setgramatura(Double gramatura) {
+        this.gramatura = gramatura;
     }
 
     public boolean verificarTecidoSustentavel(String tipoTecido) {

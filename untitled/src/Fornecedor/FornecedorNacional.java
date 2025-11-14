@@ -1,10 +1,19 @@
 package Fornecedor;
 
 public class FornecedorNacional extends Fornecedor {
+    private Double impostoNacional;
 
     public FornecedorNacional(String id, String nome, String cnpj, String email, String telefone, String endereco,
-    String tipoProdutoFornecido) {
+    String tipoProdutoFornecido, Double impostoNacional) {
         super(id, nome, cnpj, email, telefone, endereco, tipoProdutoFornecido);
+        this.impostoNacional = impostoNacional;
+    }
+    public Double getimpostoNacional() {
+        return impostoNacional;
+    }
+
+    public void setimpostoNacional(Double impostoNacional) {
+        this.impostoNacional = impostoNacional;
     }
 
     public boolean validarCNPJ() {
@@ -12,8 +21,8 @@ public class FornecedorNacional extends Fornecedor {
     }
 
     public double calcularImpostoNacional(double valorCompra) {
-        double taxaImposto = 0.12; // 12% de imposto nacional
-        return valorCompra * taxaImposto;
+        double taxaImpostoNacional = 0.12; // 12% de imposto nacional
+        return valorCompra * taxaImpostoNacional;
     }
 
     

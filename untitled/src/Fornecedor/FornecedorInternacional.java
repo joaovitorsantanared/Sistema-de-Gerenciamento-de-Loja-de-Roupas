@@ -1,10 +1,20 @@
 package Fornecedor;
 
 public class FornecedorInternacional extends Fornecedor {
+    private Double taxaImportacao;
 
     public FornecedorInternacional(String id, String nome, String cnpj, String email, String telefone, String endereco,
-    String tipoProdutoFornecido) {
+    String tipoProdutoFornecido, Double taxaImportacao) {
           super(id, nome, cnpj, email, telefone, endereco, tipoProdutoFornecido);
+          this.taxaImportacao = taxaImportacao;
+    }
+
+    public Double gettaxaImportacao() {
+        return taxaImportacao;
+    }
+
+    public void settaxaImportacao(Double taxaImportacao) {
+        this.taxaImportacao = taxaImportacao;
     }
 
     public double calcularTaxaImportacao(double valorCompra) {

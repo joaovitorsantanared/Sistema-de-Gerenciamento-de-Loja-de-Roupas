@@ -8,7 +8,7 @@ public class VendasOnline extends Vendas {
     private String nomeCliente;
 
     public VendasOnline(String id, LocalDate data, Double valorTotal, String formaPagamento,
-                        String enderecoEntrega, String statusPedido, String nomeCliente) {
+     String enderecoEntrega, String statusPedido, String nomeCliente) {
         super(id, data, valorTotal, formaPagamento);
         setEnderecoEntrega(enderecoEntrega);
         setStatusPedido(statusPedido);
