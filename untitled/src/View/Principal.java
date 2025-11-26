@@ -57,9 +57,7 @@ public class Principal {
         Vendedor vendedor = new Vendedor(2, "Pedro", "987.654.321‑00",
                 LocalDate.of(1995,9,25), LocalDate.of(2021,1,15), true, 500.0);
 
-        caixa.registrarPagamento(300.00);
-        caixa.realizarSangria(50.00);
-        System.out.printf("Salário do Caixa: R$ %.2f%n", caixa.calcularSalario());
+
 
         vendedor.registrarVenda(800.00);
         vendedor.registrarVenda(500.00);
@@ -69,10 +67,7 @@ public class Principal {
         System.out.printf("Salário do Gerente: R$ %.2f%n", gerente.calcularSalario());
         gerente.avaliarDesempenho(vendedor, 1000.0);
 
-        estoquista.adicionarProduto(100);
-        estoquista.removerProduto(30);
-        estoquista.consultarEstoque();
-        System.out.printf("Salário do Estoquista: R$ %.2f%n", estoquista.calcularSalario());
+
         System.out.println("=== FIM FUNCIONÁRIOS ===\n");
 
         // ===== EMPRESA & DEPARTAMENTOS =====
@@ -80,19 +75,16 @@ public class Principal {
         DepartamentoRH rh = new DepartamentoRH("Loja Central", "12.345.678/0001‑99",
                 "Rua das Flores, 100", "(81) 90000‑0000");
         rh.adicionarFuncionarioRH(vendedor);
-        rh.adicionarFuncionarioRH(caixa);
         rh.listarFuncionariosRH();
         rh.relatorioAtivos();
 
         DepartamentoFinanceiro financeiro = new DepartamentoFinanceiro("Loja Central", "12.345.678/0001‑99",
                 "Rua das Flores, 100", "(81) 90000‑0000");
-        financeiro.adicionarCaixa(caixa);
         financeiro.exibirRelatorioFinanceiro();
 
         Matriz matriz = new Matriz("Loja Central", "12.345.678/0001‑99",
                 "Rua das Flores, 100", "(81) 90000‑0000", gerente);
         matriz.adicionarFuncionario(vendedor);
-        matriz.adicionarFuncionario(estoquista);
 
         Filial filial = new Filial("Loja Shopping Recife", "98.765.432/0001‑88",
                 "Av. Recife, 2000", "(81) 98888‑7777", 1, gerente);
@@ -118,13 +110,13 @@ public class Principal {
         // ===== FORNECEDORES =====
         System.out.println("--- FORNECEDORES ---");
         FornecedorNacional fn = new FornecedorNacional("F01","Tecidos Brasil","12.345.678/0001‑99",
-                "contato@tecidosbr.com","(81) 91234‑5678","Rua das Indústrias, 400","Tecidos");
+                "contato@tecidosbr.com","(81) 91234‑5678","Rua das Indústrias, 400","Tecidos",19.50);
         FornecedorInternacional fi = new FornecedorInternacional("F02","Global Fashion","98.765.432/0001‑11",
-                "global@fashion.com","+1 202‑555‑0147","New York","Roupas Premium");
+                "global@fashion.com","+1 202‑555‑0147","New York","Roupas Premium",1.50);
         FornecedorAcessorio fa = new FornecedorAcessorio("F03","Bijoux Luxo","77.889.955/0001‑90",
-                "contato@bijouxluxo.com","(81) 98877‑6655","Recife","Acessórios");
+                "contato@bijouxluxo.com","(81) 98877‑6655","Recife","Acessórios","Tecido Linho");
         FornecedorTecido ft = new FornecedorTecido("F04","Tecidos Leves","44.556.677/0001‑23",
-                "tecidosleves@gmail.com","(81) 99855‑6677","Olinda","Tecidos Sustentáveis");
+                "tecidosleves@gmail.com","(81) 99855‑6677","Olinda","Tecidos Sustentáveis",7.20);
 
         fn.cadastrar();
         System.out.println("CNPJ válido? " + fn.validarCNPJ()+"\n");
