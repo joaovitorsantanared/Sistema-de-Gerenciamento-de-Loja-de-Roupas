@@ -10,37 +10,40 @@ public abstract class Cliente implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String id;
+    @Column(nullable = false)
+    private Long id;
+
     @Column(nullable = false, length = 100)
     private String nome;
-    @Column(nullable = false, length = 11, unique = true)
+
+    @Column(nullable = false,  unique = true, length = 11)
     private String cpf;
-    @Column(nullable = false, length = 50, unique = true)
+
+    @Column(nullable = false,length = 50 )
     private String email;
-    @Column(nullable = false,length = 9, unique = true)
+
+    @Column(nullable = false, length = 11 )
     private String numero;
-    @Column(nullable = false)
+
+    @Column(nullable = true)
     private boolean ative;
 
     public Cliente() {
     }
 
-    public Cliente(String id, String nome, String cpf, String email, String numero) {
-        this.id = id;
+    public Cliente( String nome, String cpf, String email, String numero) {
+
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
         this.numero = numero;
+        this.ative = true;
 
     }
 
 
-    public String getId() {
+    public Long getId() {
         return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getNome() {
