@@ -26,7 +26,7 @@ public class VendedorController {
     }
 
     @PostMapping
-    public Vendedor create(@RequestBody Vendedor vendedor) {
+    public Vendedor createVendedor(@RequestBody Vendedor vendedor) {
         return vendedorService.save(vendedor);
     }
 

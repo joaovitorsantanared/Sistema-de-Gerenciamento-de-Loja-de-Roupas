@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.model.empresa.Empresa;
 import com.example.demo.model.funcionario.Gerente;
 import com.example.demo.service.GerenteService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +28,7 @@ public class GerenteController {
     }
 
     @PostMapping
-    public Gerente create(@RequestBody Gerente gerente) {
+    public Gerente createGerente(@RequestBody Gerente gerente) {
         return gerenteService.save(gerente);
     }
 
@@ -41,4 +42,3 @@ public class GerenteController {
         gerenteService.delete(id);
     }
 }
-//

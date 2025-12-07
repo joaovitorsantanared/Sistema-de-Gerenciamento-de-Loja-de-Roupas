@@ -1,9 +1,6 @@
 package com.example.demo.model.funcionario;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-
+import jakarta.persistence.*;
 import java.time.LocalDate;
 
 
@@ -16,9 +13,10 @@ public class Vendedor extends Funcionario {
     @Column(name = "total_vendas")
     private double totalVendas = 0;
 
+
     //CONSTRUTOR
     public Vendedor(String nome, String cpf, LocalDate dataNascimento, LocalDate dataContratacao, boolean ativo, double comissao) {
-        super(nome, cpf,dataNascimento, dataContratacao, 1500.0, "Vendedor", ativo);
+        super(nome, cpf, dataNascimento, dataContratacao, 1500.0, "Vendedor", ativo);
         this.comissao = comissao;
     }
 
@@ -32,8 +30,6 @@ public class Vendedor extends Funcionario {
         return getSalarioBase() + (totalVendas * comissao);
     }
 
-
-
     //GETTER'S E SETTER'S
     public double getComissao() {
         return comissao;
@@ -42,13 +38,11 @@ public class Vendedor extends Funcionario {
         this.comissao = comissao;
     }
 
-
     //MÉTODO PARA REGISTAR VENDA
     public void registrarVenda(double valor) {
         totalVendas += valor;
         System.out.println("Venda registrada no valor de R$ " + valor);
     }
-
 
     //GETTER'S E SETTER'S
     public double getTotalVendas() {

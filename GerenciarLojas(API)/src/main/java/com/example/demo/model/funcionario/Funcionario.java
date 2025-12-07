@@ -1,8 +1,9 @@
 package com.example.demo.model.funcionario;
 
+import com.example.demo.model.empresa.Empresa;
 import jakarta.persistence.*;
-
 import java.time.LocalDate;
+
 
 @MappedSuperclass
 public abstract class Funcionario {
@@ -21,8 +22,13 @@ public abstract class Funcionario {
     private LocalDate dataContratacao;
     @Column(name = "salario_base", nullable = false)
     private double salarioBase;
+    @Column(nullable = false)
     private String cargo;
+    @Column(nullable = false)
     private boolean ativo;
+    @ManyToOne
+    @JoinColumn(name = "empresa_id")
+    private Empresa empresa;
 
 
     //CONSTRUTOR
@@ -36,11 +42,9 @@ public abstract class Funcionario {
         this.ativo = ativo;
     }
 
-
     //CONSTRUTOR VAZIO
     public Funcionario() {
     }
-
 
     //GETTER'S E SETTER'S
     public Long getId() {
@@ -89,6 +93,9 @@ public abstract class Funcionario {
     public void setAtivo(boolean ativo) {
         this.ativo = ativo;
     }
+    public Empresa getEmpresa() {return empresa;}
+    public void setEmpresa(Empresa empresa) {this.empresa = empresa;}
+
 
     //TO STRING
     @Override
@@ -96,7 +103,6 @@ public abstract class Funcionario {
         return "ID: " + id + ", Nome: " + nome + ", CPF: " + cpf +
                 ", Cargo: " + cargo + ", Salário Base: " + salarioBase;
     }
-
     //CALCULAR SALÁRIO
     public abstract double calcularSalario();
 }

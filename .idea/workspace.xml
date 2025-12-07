@@ -8,12 +8,31 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/java/com/example/demo/controller/GerenteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/java/com/example/demo/controller/GerenteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/java/com/example/demo/controller/VendedorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/java/com/example/demo/controller/VendedorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/java/com/example/demo/model/funcionario/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/java/com/example/demo/model/funcionario/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/java/com/example/demo/model/funcionario/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/java/com/example/demo/model/funcionario/Gerente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/java/com/example/demo/model/funcionario/Vendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/java/com/example/demo/model/funcionario/Vendedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/java/com/example/demo/service/GerenteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/java/com/example/demo/service/GerenteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/java/com/example/demo/service/VendedorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/GerenciarLojas(API)/src/main/java/com/example/demo/service/VendedorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sistemas de Gerenciamento de Lojas/src/Empresa/DepartamentoFinanceiro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sistemas de Gerenciamento de Lojas/src/Empresa/DepartamentoRH.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sistemas de Gerenciamento de Lojas/src/Empresa/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sistemas de Gerenciamento de Lojas/src/Empresa/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sistemas de Gerenciamento de Lojas/src/Empresa/Filial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sistemas de Gerenciamento de Lojas/src/Empresa/Matriz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sistemas de Gerenciamento de Lojas/src/Empresa/UnidadeEmpresa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sistemas de Gerenciamento de Lojas/src/Funcionarios/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sistemas de Gerenciamento de Lojas/src/Funcionarios/Funcionario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -93,6 +112,7 @@
       <workItem from="1765035121468" duration="67000" />
       <workItem from="1765035411315" duration="4560000" />
       <workItem from="1765043860621" duration="1906000" />
+      <workItem from="1765107596899" duration="25749000" />
     </task>
     <servers />
   </component>

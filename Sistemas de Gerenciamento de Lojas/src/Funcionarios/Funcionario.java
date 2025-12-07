@@ -10,11 +10,12 @@ public abstract class Funcionario {
     private LocalDate dataContratacao;
     private double salarioBase;
     private String cargo;
+    private String tipoEmpresa;
     private boolean ativo;
 
 
     //CONSTRUTOR
-    public Funcionario(int id, String nome, String cpf, LocalDate dataNascimento, LocalDate dataContratacao, double salarioBase, String cargo, boolean ativo) {
+    public Funcionario(int id, String nome, String cpf, LocalDate dataNascimento, LocalDate dataContratacao, double salarioBase, String cargo, boolean ativo, String tipoEmpresa) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
@@ -23,6 +24,7 @@ public abstract class Funcionario {
         this.salarioBase = salarioBase;
         this.cargo = cargo;
         this.ativo = ativo;
+        this.tipoEmpresa = tipoEmpresa;
     }
 
 
@@ -80,6 +82,7 @@ public abstract class Funcionario {
     public void setAtivo(boolean ativo) {
         this.ativo = ativo;
     }
+
 
 
     //CALCULAR SALÁRIO
