@@ -9,7 +9,6 @@ public class Acessorio extends Roupas {
 
 
 
-
     public String getTipoAcessorio() {
         return tipoAcessorio;
     }
