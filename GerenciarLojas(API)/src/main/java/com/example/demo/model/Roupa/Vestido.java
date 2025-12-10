@@ -13,7 +13,7 @@ public class Vestido extends Roupa{
 
     public Vestido(Long id, String nome, double preco, String tamanho, String cor, String marca,
             int quantidadeEstoque, String comprimento) {
-        super(id, nome, preco, tamanho, cor, marca, quantidadeEstoque);
+        super( nome, preco, tamanho, cor, marca, quantidadeEstoque);
         this.comprimento = comprimento;
 
     }

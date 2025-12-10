@@ -13,7 +13,7 @@ public class Calca extends Roupa {
 
 
     public Calca(Long id, String nome, double preco, String tamanho, String cor, String marca, int quantidadeEstoque, String modeloCalca) {
-        super(id, nome, preco, tamanho, cor, marca, quantidadeEstoque);
+        super( nome, preco, tamanho, cor, marca, quantidadeEstoque);
         this.modeloCalca = modeloCalca;
     }
     

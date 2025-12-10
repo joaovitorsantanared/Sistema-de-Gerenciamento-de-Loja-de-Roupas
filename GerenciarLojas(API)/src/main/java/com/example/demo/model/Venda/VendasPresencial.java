@@ -5,7 +5,6 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "vendaspresencial_table")
-@PrimaryKeyJoinColumn(name = "venda_id")
 public class VendasPresencial extends Venda {
 
     private boolean entregaImediata;
@@ -20,10 +19,10 @@ public class VendasPresencial extends Venda {
     }
 
     public boolean isEntregaImediata() {
-        return entregaImediata; 
+        return entregaImediata;
     }
 
     public void setEntregaImediata(boolean entregaImediata) {
-        this.entregaImediata = entregaImediata; 
+        this.entregaImediata = entregaImediata;
     }
 }

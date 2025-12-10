@@ -13,7 +13,7 @@ public class Camiseta extends Roupa{
 
     public Camiseta(Long id, String nome, double preco, String tamanho, String cor, String marca,
             int quantidadeEstoque, String tipoGola) {
-        super(id, nome, preco, tamanho, cor, marca, quantidadeEstoque);
+        super( nome, preco, tamanho, cor, marca, quantidadeEstoque);
         this.tipoGola = tipoGola;
     }
     

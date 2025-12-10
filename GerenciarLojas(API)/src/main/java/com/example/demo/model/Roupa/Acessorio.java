@@ -14,7 +14,7 @@ public class Acessorio extends Roupa{
     
     public Acessorio(Long id, String nome, double preco, String tamanho, String cor, String marca,
             int quantidadeEstoque, String tipoAcessorio, String material) {
-        super(id, nome, preco, tamanho, cor, marca, quantidadeEstoque);
+        super( nome, preco, tamanho, cor, marca, quantidadeEstoque);
         this.tipoAcessorio = tipoAcessorio;
         this.material = material;
 

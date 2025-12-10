@@ -5,15 +5,13 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "vendasonline_table")
-@PrimaryKeyJoinColumn(name = "venda_id")
 public class VendasOnline extends Venda {
 
     private String enderecoEntrega;
     private String statusPedido;
     private String nomeCliente;
 
-    public VendasOnline() {
-    }
+    public VendasOnline() {}
 
     public VendasOnline(Long id, LocalDate data, Double valorTotal, String formaPagamento,
                         String enderecoEntrega, String statusPedido, String nomeCliente) {
@@ -24,23 +22,26 @@ public class VendasOnline extends Venda {
     }
 
     public String getEnderecoEntrega() {
-        return enderecoEntrega; 
+        return enderecoEntrega;
     }
+
     public void setEnderecoEntrega(String enderecoEntrega) {
-        this.enderecoEntrega = enderecoEntrega; 
+        this.enderecoEntrega = enderecoEntrega;
     }
 
     public String getStatusPedido() {
-        return statusPedido; 
+        return statusPedido;
     }
+
     public void setStatusPedido(String statusPedido) {
-        this.statusPedido = statusPedido; 
+        this.statusPedido = statusPedido;
     }
 
     public String getNomeCliente() {
-        return nomeCliente; 
+        return nomeCliente;
     }
+
     public void setNomeCliente(String nomeCliente) {
-        this.nomeCliente = nomeCliente; 
+        this.nomeCliente = nomeCliente;
     }
 }
